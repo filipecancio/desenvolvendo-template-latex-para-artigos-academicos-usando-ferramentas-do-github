@@ -39,3 +39,27 @@ Para orientadores e outros envolvidos que não possuem o interesse ou a permiss�
 \end{figure}
 
 A utilização dessa funcionalidade permite ao autor a simples necessidade de subir o projeto para o repositório para cada versãoo ou se preferir alterar arquivos na própria plataforma.
+
+\subsection{Boas práticas de desenvolvimento}
+
+Por mais comum que seja, editar na ramificação main, não é o ideal. No caso do projeto atual, o autor pode acabar gerando um número excessivo de release que com o tempo não farão muito sentido, será impraticável saber qual a release certa para cada alinhamento feito com o orientador. Para isso é recomendado que o autor crie novas ramificações para o desenvolvimento do artigo, deixando a branch main somente para as versões finais, ou de revisão do orientador.
+Ao criar uma nova ramificação, ainda assim, é gerado um novo pdf a cada commit. O autor pode verificar os pdfs gerados na aba Actions do repositório (imagem~\ref{fig:image10}). Lá cada versão terá o nome da mensagem de commit e terá por anexo o pdf gerado (imagem~\ref{fig:image11}). Isso permitira um fluxo de desenvolvimento mais limpo e fácil de validar correções.
+
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=.5\textwidth]{./images/image10.png}
+	\caption{Aba actions}
+	\label{fig:image10}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=.5\textwidth]{./images/image11.png}
+	\caption{Action aberta}
+	\label{fig:image11}
+\end{figure}
+
+Neste projeto não é definido um modelo fixo de fluxo de desenvolvimento, apenas a utilização ou não da branch main. Mas deixa um espaço aberto para os mais variado usos das ferramentas do github para o desenvolvimento de artigos.
