@@ -18,8 +18,7 @@ jobs:
           name: main
           path: article/main.pdf
       - name: comment PR
-        uses: harupy/comment-on-pr@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: JoseThen/comment-pr@v1.2.0
         with:
-          filename: message.md
+          comment: 'This PR is the bees knees!'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
