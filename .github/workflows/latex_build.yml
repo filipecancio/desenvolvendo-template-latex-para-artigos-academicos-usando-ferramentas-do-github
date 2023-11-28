@@ -24,8 +24,8 @@ jobs:
           name: main
           path: article/main.pdf
       - name: comment PR
-        uses: machine-learning-apps/pr-comment@master
+        uses: harupy/comment-on-pr@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          path: article/main.pdf
+          filename: message.md
