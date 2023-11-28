@@ -17,13 +17,12 @@ jobs:
         with:
           name: main
           path: article/main.pdf
-          env-url: FOOBAR
       - name: comment PR
         uses: tonyhallett/artifacts-url-comments@v1.1.0
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-            prefix: article/main.pdf
-            suffix: Have a nice day.
+            prefix: Segue o pdf
+            suffix: Valeo
             format: name
             addTo: pullandissues
