@@ -17,8 +17,9 @@ jobs:
         with:
           name: main
           path: article/main.pdf
+          env-url: FOOBAR
       - name: comment PR
         uses: JoseThen/comment-pr@v1.2.0
         with:
-          comment: 'This PR is the bees knees!'
+          comment: 'segue o link: ${{ env.FOOBAR }}'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
