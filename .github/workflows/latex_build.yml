@@ -1,8 +1,5 @@
 name: Build LaTeX document
-on:
-  workflow_run:
-    workflows: ["PR"]
-    types: [completed]
+on: pull_request
 jobs:
   build-artifact:
     runs-on: ubuntu-latest
