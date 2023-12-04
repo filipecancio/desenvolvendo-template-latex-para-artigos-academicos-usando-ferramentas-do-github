@@ -1,7 +1,10 @@
 name: Build LaTeX document
-on: pull_request
+on:
+  workflow_run:
+    workflows: ["PR"]
+    types: [completed]
 jobs:
-  build_latex:
+  build-artifact:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
@@ -17,12 +20,16 @@ jobs:
         with:
           name: main
           path: article/main.pdf
+      - name: download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: main
       - name: comment PR
         uses: tonyhallett/artifacts-url-comments@v1.1.0
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-            prefix: Segue o pdf
-            suffix: Valeo
-            format: name
-            addTo: pullandissues
+              prefix: Segue o pdf
+              suffix: Valeo
+              format: name
+              addTo: pullandissues
