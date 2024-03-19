@@ -11,4 +11,4 @@ Repositório base para template de artigo tcc em Tex baseado no modelo da SBC - 
 ## Estrutura
 
 O artigo consta na pasta `article`. Em `util` vemos as configurações e as referências. Na pasta `images`, colocamos os arquivos `.jpg` e `.png`. E por último em `sections` é onde é feito o artigo de fato. Os artigos possuem prefixo numérico pra facilitar a visualização em ordem nas pastas. Os arquivos Header e Abstract são obrigatórios. os demais podem ser substituídos.
-bora ver
+
