@@ -17,6 +17,7 @@
         "**/*.lot": true,
         "**/*.out": true,
         "**/*.ldx": true,
+        "**/*.gz": true,
         "**/*.blg": true,
         "**/*.idx": true,
         "**/*.ilg": true,
