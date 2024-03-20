@@ -1,7 +1,8 @@
 name: Build LaTeX document
 on: pull_request
+
 jobs:
-  build-artifact:
+  build_latex:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
@@ -17,16 +18,17 @@ jobs:
         with:
           name: main
           path: article/main.pdf
-      - name: download artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: main
+      - name: Display structure of downloaded files
+        run: ls -R
       - name: comment PR
-        uses: tonyhallett/artifacts-url-comments@v1.1.0
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/github-script@v6
         with:
-              prefix: Segue o pdf
-              suffix: Valeo
-              format: name
-              addTo: pullandissues
+          script: |
+            const artifactUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${process.env.GITHUB_RUN_ID}`;
+            const currentDate = new Date().toLocaleString("pt-BR", {timeZone: "America/Sao_Paulo"});
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `👋 Aqui está uma nova versão do artigo em PDF: [link](${artifactUrl}). Lançado em ${currentDate}.`
+            })
