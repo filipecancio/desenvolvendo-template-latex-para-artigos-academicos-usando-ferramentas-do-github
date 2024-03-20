@@ -13,14 +13,14 @@ Na figura~\ref{fig:image12}, podemos visualizar o projeto sbc-template em execu�
 	\caption{Visualizando o devcontainer pelo Visual Studio Code e dashboard do Docker}
 	\label{fig:image12}
 \end{figure}
+A implantação do devcontainer consistiu nos diretórios .devcontainer e .vscode, que respectivamente possui uma serie de arquivos de configuração para instalação de dependências e scripts para a execução dessas dependências no container; e arquivos de configuração para o comportamento das dependências.
+No diretório .devcontainer temos o arquivo devcontainer.json que declara a imagem Docker pelo arquivo Dockerfile, a lista de extensões desejáveis e o script de inicialização do devcontainer. O dockerfile possui uma imagem de referencia  danteev/texlive que cria um container ubuntu com o compilador TexLive. O script initialize.sh inicia a configuração do Visual Studio Code e o CI (continuous integration) do container. As configurações de CI permitem que todas as vezes que o projeto é alterado, um novo arquivo PDF é gerado e sobrescreve o antigo na pasta article.
 
+Para a implantação do devcontainer foi baseada no repositório a-nau/latex-devcontainer disponível em \url{https://github.com/a-nau/latex-devcontainer}. Utilizando de scripts do projeto e adaptando para a finalidade do sbc-template.
+
+\subsection{Actions}
 
 Para esse projeto ser possíveloi necessária a utilização das mais variadas ferramentas de desenvolvimento:
 
-- o github actions
-- xu-cheng/latex-action@v2
 - actions/upload-artifact@v3
-- codespaces
 - marvinpinto/actions
-- site oficial da sbc
-- docker
