@@ -17,7 +17,7 @@
                 "eamodio.gitlens",
                 "tecosaur.latex-utilities"
             ]
-        }
+    }
     },
     "mounts": [
         // "source=${env:USERPROFILE}/.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached" // Windows only to use Git credentials
