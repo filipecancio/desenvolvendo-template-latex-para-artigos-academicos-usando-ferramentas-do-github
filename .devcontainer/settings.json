@@ -34,7 +34,7 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "nickfode.latex-formatter",
     "spellright.language": [
-        "en"
+        "pt-BR"
     ],
     "latex-workshop.latex.autoBuild.run": "onSave",
     "latex-workshop.view.pdf.viewer": "tab",
