@@ -1,6 +1,6 @@
 \section{Sobre o projeto}
 
-A solução apresentada foi desenvolvida em um repositório do Github chamado ``filipecancio/sbc-template'' (figura~\ref{fig:fig10}) possuindo o template Latex oficial da SBC (sociedade Brasileira de Computação) para a produção de artigos. O acesso está disponível em ``https://github.com/filipecancio/artigo-final''. O repositório ao ser acessado se converte em um ambiente de desenvolvimento (ou Devcontainer), aonde não há necessidade de conhecimento em programação, basta editar qualquer arquivo ``.tex'' e é gerado um ``.pdf'' formatado no padrão SBC. Podemos considerar no projeto as seguintes funcionalidades:
+A solução apresentada foi desenvolvida em um repositório do Github chamado ``filipecancio/sbc-template'' (figura~\ref{fig:fig10}) possuindo o template LaTex oficial da SBC (Sociedade Brasileira de Computação) para a produção de artigos. O acesso está disponível em ``https://github.com/filipecancio/artigo-final''. O repositório, ao ser acessado, se converte em um ambiente de desenvolvimento (Devcontainer), aonde não há necessidade de conhecimento em programação, basta editar qualquer arquivo ``.tex'' e é gerado um ``.pdf'' formatado no padrão SBC.
 
 \begin{figure}[ht]
 	\centering
@@ -8,6 +8,10 @@ A solução apresentada foi desenvolvida em um repositório do Github chamado ``
 	\caption{repositorio sbc-template}
 	\label{fig:fig10}
 \end{figure}
+
+\subsection{Funcionalidades}
+
+Como solução alternativa às plataformas citadas anteriormente (Overleaf, Word e Documentos), o projeto possui algumas funcionalidades semelhantes porém mais abrangentes e disponíveis de forma gratuita. Entre elas podemos destacar:
 
 \begin{itemize}
 	\item Colaborativo: Utiliza 100\% de ferramentas do github para escrever artigos com orientadores e outros autores.
@@ -21,78 +25,23 @@ As edições podem ocorrer de três formas: diretamente no site do GitHub (figur
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=.6\textwidth]{./images/fig01.png}
+	\includegraphics[width=.8\textwidth]{./images/fig03.png}
 	\caption{Utilizando o projeto no site do GitHub}
 	\label{fig:fig01}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=.6\textwidth]{./images/fig02.png}
+	\includegraphics[width=.8\textwidth]{./images/fig02.png}
 	\caption{Utilizando o projeto pelo Codespaces}
 	\label{fig:fig02}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=.6\textwidth]{./images/fig03.png}
+	\includegraphics[width=.8\textwidth]{./images/fig01.png}
 	\caption{Utilizando o projeto com Visual Studio Code}
 	\label{fig:fig03}
 \end{figure}
 
-\subsection{Vantagens do projeto}
-
-\subsubsection{Versões de release}
-Considerando que o projeto utiliza 100\% de ferramentas do github, uma das funcionalidades mais marcantes é a geração de arquivos .pdf de forma automática associada ao controle de versão Git. A cada nova edição, o projeto gera um novo pdf com as alterações realizadas. A cada commit gerado na banch de ``main'' é gerada uma versão de release com o pdf datado (imagem~\ref{fig:fig04}). Essa funcionalidade descarta qualquer necessidade de salvar versões de pdf, uma vez que o github tem tudo salvo e documentado.
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=.6\textwidth]{./images/fig04.png}
-	\caption{Detalhes da ultima release}
-	\label{fig:fig04}
-\end{figure}
-
-\subsubsection{Pull Requests}
-
-Os artigos não precisam ser desenvolvidos na ramificações ``main''. O manual de instruções do projeto orienta que o pesquisador deve criar novas ramificações para implementar novos tópicos e correções. Associado a isso, pode ser utilizada a ferramenta de Pull Requests do GitHub para promover entre autor e orientador o controle das mudanças em cada versão, facilitando a correção dos artigos (imagem~\ref{fig:fig05}). O uso de pull requests permite que o repositório gere versões de pdf exclusivas para aquela ramificação (imagem~\ref{fig:fig06}).
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=.6\textwidth]{./images/fig05.png}
-	\caption{Correção de trecho do artigo por Pull Request}
-	\label{fig:fig05}
-\end{figure}
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=.6\textwidth]{./images/fig06.png}
-	\caption{Mensagem do bot do github com link do pdf em Pull Request}
-	\label{fig:fig06}
-\end{figure}
-
-
-\subsubsection{Gestão de projetos}
-Com o GitHub Project,  edição dos artigos fica ainda mais organizada. É comum nas elaborações de artigos em projetos de pesquisa a estipulação de calendários e cronogramas. No projeto, as próprias Pull Requests se tornam o cronograma do artigo, nelas podemos descrever o que será trabalhado de forma completa e documentada, com prazos, legendas e pessoas envolvidas na revisão. É possível inclusive visualizar de três diferentes formas: como tabela (imagem~\ref{fig:fig07}), quadros (imagem~\ref{fig:fig08}) e gráfico GANTT (imagem~\ref{fig:fig09}).
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=.5\textwidth]{./images/fig07.png}
-	\caption{Visualização de Pull Request como tabela no GitHub Project}
-	\label{fig:fig07}
-\end{figure}
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=.5\textwidth]{./images/fig08.png}
-	\caption{Visualização de Pull Request como quadro no GitHub Project}
-	\label{fig:fig08}
-\end{figure}
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=.5\textwidth]{./images/fig09.png}
-	\caption{Visualização de Pull Request como GANTT no GitHub Project}
-	\label{fig:fig09}
-\end{figure}
-
-Essa são as principais funcionalidades que tornam o projeto interessante o suficiente para a comunidade acadêmica. A possibilidade de manter um artigo no github com resgistros de alteração de cada parte envolvida também garante proteção contra possíveis fraudes e plágios. É possivel acessar e editar em qualquer plataforma com internet, tornando a escrita acessível a qualquer pessoa na comunidade.
+\clearpage
