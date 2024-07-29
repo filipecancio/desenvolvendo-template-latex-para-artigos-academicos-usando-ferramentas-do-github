@@ -1,4 +1,4 @@
-\section{Metodologia}
+\subsection{Metodologia}
 
 O GitHub compõe a maior parte das ferramentas presentes nesse trabalho. Nos tópicos anteriores foi apresentado como parte das funcionalidades mas cada ferramenta apresentada foi fundamental para desenvolvimento do projeto. 
 Juntamente com o Project, Pull Requests e Releases, também foi usado o Actions para gerar as automações e Devcontainer para compor o ambiente de desenvolvimento.
@@ -6,5 +6,7 @@ Juntamente com o Project, Pull Requests e Releases, também foi usado o Actions 
 Além das ferramentas do GitHub, foi feita a integração do projeto ``a-nau/latex-devcontainer'' e ``danteev/texlive'' que possui compilador e lint para o LaTex e ``xu-cheng/latex-action@v2'' para geração dos pdfs nas versões de release e desenvolvimento.
 
 Nas versões offline, foi necessário a configuração da Ferramenta Docker para configuração e melhoria do Devcontainer e do próprio Visual Studio Code como plataforma de configuração execução e testes.
+
+Para a escolha da formatação do LaTex, foi utilizado o template oficial da SBC disponível em ``https://www.sbc.org.br/documentos-da-sbc/category/169-templates-para-artigos-e-capitulos-de-livros''. As informações em Latex usadas para a configuração de fonte, margens e demais formatações foram colocadas na pasta ``util'' com os arquivos $sbc.bst$ e $settings.sty$. Desta forma é possível usar o mesmo projeto sbs-template para a elaboração de outros tremplates em Latex apenas trocando as cofigurações destes arquivos.
 
 O artigo presente foi parte crucial para etapa de testes do projeto. Todo o artigo foi utilizado, para testar as funcionalidades, realizar melhorias e parte do conteúdo de apresentação e tutorial do projeto utilizou capturas de tela e gavações do artigo presente.
