@@ -1,7 +1,7 @@
 # Desenvolvendo template LaTex para artigos acadêmicos usando ferramentas do GitHub
 Filipe Soares Câncio, Crijina Chagas Flores
 
-**Aviso**: esse repositório é o **artigo** para acessar o projeto clique [aqui](https://github.com/filipecancio/sbc-template)
+**Aviso**: esse repositório é o **ARTIGO**. para acessar o projeto clique [aqui](https://github.com/filipecancio/sbc-template).
 
 > Abstract: The present article deals with the development of a Github repository template that allows the elaboration of scientific articles with the standards presented by SBC - Brazilian Computer Society using the LaTex language for writing and Github DevOps tools for automatic configuration and finalization of the pdf format.
 
