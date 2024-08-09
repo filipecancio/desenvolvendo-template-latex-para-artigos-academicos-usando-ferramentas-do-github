@@ -1,9 +1,9 @@
 \section{Desenvolvimento}
 
-Durante o desenvolvimento foi elaborado o repositório chamado ``filipecancio/sbc-template'' desenvolvido utilizando de integração contínua, implementando primeiramente pipelines de verificação do Latex a cada salvamento de arquivo ``.tex'', pipelines para escolha de um arquivo .pdf alvo e posteriormente uma verificação final a cada commit gerado e submetido ao site do GitHub. Em paralelo foi utilizada da entrega contínua a geração automática de ``.pdf'' e seus formatos de disponibilização. Ao total foram três formatos: Geração de ``.pdf'' instantânea a cada arquivo salvo, Geração para versão de release, e geração de ``.pdf'' a cada versão de pull request.
+Durante o desenvolvimento foi elaborado o repositório chamado ``filipecancio/sbc-template'' desenvolvido utilizando de integração contínua, implementando primeiramente processos automatizados de verificação do Latex a cada salvamento de arquivo ``.tex'', processos automatizados para escolha de um arquivo .pdf alvo e posteriormente uma verificação final a cada commit gerado e submetido ao site do GitHub. Em paralelo foi utilizada da entrega contínua a geração automática de ``.pdf'' e seus formatos de disponibilização. Ao total foram três formatos: Geração de ``.pdf'' instantânea a cada arquivo salvo, Geração para versão de lançamento, e geração de ``.pdf'' a cada versão de Requisição de Pull.
 
 Para facilitação do uso do projeto para usuários comuns toda a parte escrita é restingida para a pasta ``article''. Dentro dela temos um arquivo principal chamado ``main.tex'', uma pasta chamada sections, onde posuem arquivos ``.tex'' de exemplo que podem ser substituidos ou reescritos, uma pasta de imagens e uma pasta chamada ``util'' usada para configuração interna do Latex.
-Foi foi um manual de uso, presente no arquivo ``README.md'' do projeto, com um passo a passo completo.
+Foi um manual de uso, presente no arquivo ``README.md'' do projeto, com um passo a passo completo.
 
 Toda a implementação CI/CD (integração contínua, entrega contínua) foi implementada na elaboração do Devcontainer do projeto presente na pasta ``.devcontainer'' (Imagem~\ref{fig:image12}). Nos próximos tópicos veremos em detalhes a elaboração do ambiente de desenvolvimento e das automações
 presentes.
