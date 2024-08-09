@@ -1,6 +1,6 @@
 \section{Sobre o projeto}
 
-A solução apresentada foi desenvolvida em um repositório do Github chamado ``filipecancio/sbc-template'' (figura~\ref{fig:fig10}) possuindo o template LaTex oficial da SBC (Sociedade Brasileira de Computação) para a produção de artigos. O acesso está disponível em ``https://github.com/filipecancio/sbc-template''. O repositório, ao ser acessado, se converte em um ambiente de desenvolvimento (Devcontainer), aonde não há necessidade de conhecimento em programação, basta editar qualquer arquivo ``.tex'' e é gerado um ``.pdf'' formatado no padrão SBC.
+A solução apresentada foi desenvolvida em um repositório do GitHub chamado ``filipecancio/sbc-template'' (figura~\ref{fig:fig10}) possuindo o template LaTex oficial da SBC (Sociedade Brasileira de Computação) para a produção de artigos. O acesso está disponível em ``https://github.com/filipecancio/sbc-template''. O repositório, ao ser acessado, se converte em um ambiente de desenvolvimento (Devcontainer), aonde não há necessidade de conhecimento em programação, basta editar qualquer arquivo ``.tex'' e é gerado um ``.pdf'' formatado no padrão SBC.
 
 \begin{figure}[ht]
 	\centering
@@ -20,7 +20,7 @@ Como solução alternativa às plataformas apresentadas anteriormente, o projeto
 		Plataformas & Usa LaTex & Colaborativo & Controle de versão & Sem Conexão
 		\\
 		\hline
-		Overleaf & Sim & Só na versao paga & Só na versao paga & Não \\
+		Overleaf & Sim & Limitado & Só na versao paga & Não \\
 		\hline
 		Microsoft Word & Não & Sim & Limitado & Sim \\
 		\hline
@@ -36,7 +36,7 @@ Como solução alternativa às plataformas apresentadas anteriormente, o projeto
 Dentre as funcionalidades citadas acima (tabela~\ref{tab:tabela01}), podemos destacar as seguintes características do projeto ``filipecancio/sbc-template'':
 
 \begin{itemize}
-	\item Colaborativo: As ferramentas Word e Google Documentos utilizam serviços de nuvem (OneDrive e Drive, respectivamente) para compartilhar documentos. O Overleaf necessita de um plano pago para executar esse compartilhamento entre diferentes contas. Já o projeto ``filipecancio/sbc-template'' utiliza as ferramentas do GitHub, que são gratuitas, para realizar o compartilhamento.
+	\item Colaborativo: As ferramentas Word e Google Documentos utilizam serviços de nuvem (OneDrive e Drive, respectivamente) para compartilhar documentos. O Overleaf permite o compartilhamento com apenas uma conta e necessita de um plano pago para executar esse compartilhamento com mais diferentes contas. Já o projeto ``filipecancio/sbc-template'' utiliza as ferramentas do GitHub, que são gratuitas, para realizar o compartilhamento.
 	\item Controle de versão: O Word e o Google Documentos possuem um controle de versão que permite apenas visualizar histórico de edições recentes de diferentes usuários. O Overleaf permite integração com GitHub e GitLab para controle de versão, porém precisa de um plano pago para habilitar a integração. O projeto ``filipecancio/sbc-template'' utiliza o controle de versão do Git (integrado ao GitHub), que possui toda uma estrutura para o desenvolvimento de software e essa estrutura é direcionada para o versionamento do artigo.
 	\item Sem Conexão: O Word possui versão instalável permitindo o uso sem Conexão com rede, porém necessita de um plano pago. O Overleaf e o Google Documentos não possuem versão instalável e precisam de conexão com rede. O projeto ``filipecancio/sbc-template'' utiliza pode ser acessado por rede como usado com o Visual Studio Code instalado no computador para edição sem rede.
 \end{itemize}
@@ -79,7 +79,7 @@ As edições podem ocorrer de três formas:
 
 Para tornar as formas de edições apresentadas mais intuitivas, o projeto possui um manual de instruções no arquivo ``README.md'' que orienta o usuário a editar o artigo. O manual é dividido em seções que explicam como clonar o projeto, editar o artigo, gerar o ``.pdf'' e subir as alterações para o GitHub. O manual também possui em cada seção vídeos tutoriais que mostram o passo a passo de cada ação, auxiliando usuários que não estão acostumados com a plataforma e possivelmente tenham dificuldade em seguir as intruções em texto.
 
-Por ser desenvolvido no Github o versionamento é realizado utilizando o controle de versão Git. As instruções de versionamento no manual são voltadas para o básico de git apresentando apenas conceitos iniciais que podem ser usados diretamente no site ou com as ferramentas do Visual Studio Code e Codespaces.
+Por ser desenvolvido no GitHub o versionamento é realizado utilizando o controle de versão Git. As instruções de versionamento no manual são voltadas para o básico de git apresentando apenas conceitos iniciais que podem ser usados diretamente no site ou com as ferramentas do Visual Studio Code e Codespaces.
 
 \subsection{Destaques}
 O projeto faz uso de três ferramentas do GitHub que valem a pena destacar. São estes: ``Versões'', Requisições de Pull e ``Projetos''.
@@ -109,12 +109,12 @@ Os artigos não precisam ser desenvolvidos na ramificações ``main''. O manual 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.6\textwidth]{./images/fig06.png}
-	\caption{Mensagem do robô do github com link do pdf em Requisições de Pull}
+	\includegraphics[width=.7\textwidth]{./images/fig06.png}
+	\caption{Mensagem do robô do GitHub com link do pdf em Requisições de Pull}
 	\label{fig:fig06}
 \end{figure}
 
-Com o GitHub Projetos a edição dos artigos fica ainda mais organizada. É comum nas elaborações de artigos em projetos de pesquisa a estipulação de calendários e cronogramas. No projeto, as próprias Requisições de Pull se tornam o cronograma do artigo, nelas podemos descrever o que será trabalhado de forma completa e documentada, com prazos, legendas e pessoas envolvidas na revisão. É possível inclusive visualizar de três diferentes formas: como tabela (figura~\ref{fig:fig07}), quadros (figura~\ref{fig:fig08}) e gráfico GANTT (figura~\ref{fig:fig09}).
+Com o GitHub Projetos, a edição dos artigos fica ainda mais organizada. É comum na elaboração de artigos em projetos de pesquisa estipular de calendários e cronogramas. No projeto, as próprias Requisições de Pull se tornam o cronograma do artigo, nelas podemos descrever o que será trabalhado de forma completa e documentada, com prazos, legendas e pessoas envolvidas na revisão. É possível inclusive visualizar de três diferentes formas: como tabela (figura~\ref{fig:fig07}), quadros (figura~\ref{fig:fig08}) e gráfico GANTT (figura~\ref{fig:fig09}).
 
 \begin{figure}[H]
 	\centering
@@ -137,5 +137,5 @@ Com o GitHub Projetos a edição dos artigos fica ainda mais organizada. É comu
 	\label{fig:fig09}
 \end{figure}
 
-Estes destaques tornam o projeto interessante para a comunidade acadêmica. A possibilidade de manter um artigo no github com registros de alteração de cada parte envolvida também garante proteção contra possíveis fraudes e plágios. É possivel acessar e editar em qualquer plataforma com internet, tornando a escrita acessível a qualquer pessoa na comunidade.
+Estes destaques tornam o projeto interessante para a comunidade acadêmica. A possibilidade de manter um artigo no GitHub com registros de alteração de cada parte envolvida também garante proteção contra possíveis fraudes e plágios. É possivel acessar e editar em qualquer plataforma com internet, tornando a escrita acessível a qualquer pessoa na comunidade.
 
